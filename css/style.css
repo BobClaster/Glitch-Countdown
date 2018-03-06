@@ -1,0 +1,26 @@
+.a-desc {
+  position: absolute;
+  top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 9999999999999;
+}
+.a-desc>img {
+  width: 50px;
+}
+.main-text {
+  padding: 40px;
+}
+.logo {
+  height: 140px;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Заглавные буквы */
+}

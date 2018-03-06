@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Final Countdown</title>
+    <link rel="stylesheet" href="css/glitch.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- <a class="switcher" href="#"></a> -->
+    <center>
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="#desc" class="a-desc">
+              <img src="img/arrow.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </center>
+
+    <div class="screen glitch">
+
+      <div class="clock is-off">
+        <p style='font-size: 35.5px;'>До конференції залишилось</p>
+        <span class="time" data-time=""></span>
+        <p style='font-size: 50px;'>
+          дні &nbsp;| &nbsp;год &nbsp;|&nbsp; хви &nbsp;|&nbsp; сек
+        </p>
+      </div>
+
+    </div>
+    <div class="main-text">
+      <section id="desc">
+      </section>
+      <br>
+      <br>
+      <h3>Якщо ти потрапив на цю сторінку, вітаю, тебе запрошено на першу технічну конференцію FSpace!</h3>
+      <br>
+      <p>
+        День? - 1 квітня 2018 р <br>
+        Година? - 13:00 <br>
+        Місце? - кожен запрошений учасник отримає СМС за день до конференції <br>
+      </p>
+      <br>
+      <br>
+      <center><img src="img/logo.png" class="logo" alt=""></center>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+      });
+    </script>
+  </body>
+</html>
